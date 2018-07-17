@@ -12,7 +12,7 @@ this project uses:
  - gulp
 
 
-## Getting Start
+## Getting Started
 
     % git clone https://github.com/Hykwtakumin/ChromeExtension-TS-Starter.git
     % npm install

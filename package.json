@@ -21,9 +21,9 @@
   "author": "hykwtakumin <hykwtakumin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stkay/ChromeExtension-TS-Starter/issues"
+    "url": "https://github.com/Hykwtakumin/ChromeExtension-TS-Starter/issues"
   },
-  "homepage": "https://github.com/stkay/ChromeExtension-TS-Starter#readme",
+  "homepage": "https://github.com/Hykwtakumin/ChromeExtension-TS-Starter#readme",
   "dependencies": {
     "@types/es6-promise": "^3.3.0",
     "axios": "^0.18.0",

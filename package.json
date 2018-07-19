@@ -27,7 +27,8 @@
   "dependencies": {
     "@types/es6-promise": "^3.3.0",
     "axios": "^0.18.0",
-    "chrome-promise": "^3.0.2"
+    "chrome-promise": "^3.0.2",
+    "hyperapp": "^1.2.8"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.68",

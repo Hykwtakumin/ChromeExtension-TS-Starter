@@ -8,9 +8,9 @@
     "tsc": "./node_modules/.bin/tsc",
     "copy": "cp ./manifest.json ./dist && cp -r ./src/pages ./dist/pages && cp -r ./src/icons ./dist/icons && cp -r ./src/styles ./dist/styles",
     "build": "npm run clean && npm run copy && npm run tsc && npm run browserify",
-    "browserify-bg": "browserify ./dist/scripts/background.js -o ./dist/scripts/background.js",
-    "browserify-cs": "browserify ./dist/scripts/content.js -o ./dist/scripts/content.js",
-    "browserify-op": "browserify ./dist/scripts/option.js -o ./dist/scripts/option.js",
+    "browserify-bg": "browserify ./dist/scripts/background.js -o ./dist/scripts/background.js --debug",
+    "browserify-cs": "browserify ./dist/scripts/content.js -o ./dist/scripts/content.js --debug",
+    "browserify-op": "browserify ./dist/scripts/option.js -o ./dist/scripts/option.js --debug",
     "browserify": "npm run browserify-bg && npm run browserify-cs && npm run browserify-op",
     "test": "tslint '/src/scripts/*.ts'"
   },
@@ -24,16 +24,11 @@
     "url": "https://github.com/Hykwtakumin/ChromeExtension-TS-Starter/issues"
   },
   "homepage": "https://github.com/Hykwtakumin/ChromeExtension-TS-Starter#readme",
-  "dependencies": {
-    "@types/es6-promise": "^3.3.0",
-    "axios": "^0.18.0",
-    "chrome-promise": "^3.0.2",
-    "cached-path-relative": ">=1.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/chrome": "^0.0.68",
     "browserify": "^16.2.3",
     "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.4.5"
   }
 }

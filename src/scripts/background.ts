@@ -11,20 +11,13 @@ chrome.runtime.onUpdateAvailable.addListener(async details => {
   reloadExtension();
 });
 
-/*ここに変数を置くのはだめそう*/
-/*EventPageにおいてはインスタンスや状態は持てないものと思ったほうが良い?*/
-
-/*chrome-promiseではtabs.exeCuteScriptが使えないようである */
-
 const setModeOn = async () => {
   await setStorage("mode", true).catch(e => console.log(e));
-  //await thenChrome.storage.local.set({ mode: true });
   chrome.browserAction.setBadgeText({ text: "ON" });
 };
 
 const setModeOff = async () => {
   await setStorage("mode", false).catch(e => console.log(e));
-  //await thenChrome.storage.local.set({ mode: false });
   chrome.browserAction.setBadgeText({ text: "OFF" });
 };
 
